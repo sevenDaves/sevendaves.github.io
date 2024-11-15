@@ -1,0 +1,5 @@
+title: #default["repository_name"]
+description: sevendaves' homepage
+show_downloads: false
+google_analytics:
+remote_theme: dieghernan/chulapa
