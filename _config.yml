@@ -218,21 +218,21 @@ analytics_id            :
 #   clippings: all
 #   blanklines: true
 
-# plugins:
-#   - jekyll-github-metadata
-#   - jekyll-paginate
-#   - jekyll-include-cache
-#   - jekyll-sitemap
+plugins:
+  - jekyll-github-metadata
+  - jekyll-paginate
+  - jekyll-include-cache
+  - jekyll-sitemap
 
-# # Exclude these files from production site
-# exclude:
-#   - LICENSE
-#   - README.md
-#   - Gemfile
-#   - vendor
-#   - /docs # ignore Chulapa /docs
-#   - /test # ignore Chulapa /test
-#   - github-metrics.svg
+# Exclude these files from production site
+exclude:
+  - LICENSE
+  - README.md
+  - Gemfile
+  - vendor
+  - /docs # ignore Chulapa /docs
+  - /test # ignore Chulapa /test
+  - github-metrics.svg
 
 # include:
 #  - _pages
