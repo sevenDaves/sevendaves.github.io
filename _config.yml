@@ -17,7 +17,7 @@ remote_theme: dieghernan/chulapa
 # Overall options for your site, would affect your site SEO
 # Default values are explained
 locale                  :     #default["en-US"] format language-TERRITORY , e.g fr, en-GB, es-MX, pt-BR
-title                   :     #default["repository_name"]
+title                   :     Awesome site #default["repository_name"]
 title_separator         :     #default [" | "]
 subtitle                :     #default [your-repository-tagline]
 description             :     homepage #default [your-repository-tagline]
@@ -63,33 +63,33 @@ analytics_id            :
 #   algolia_logo          :  true #Displays algolia logo. Should be set to true if you are on a community plan, otherwise false.
 
 # google_cse_id: #Your cse id
-# # This site uses jekyll-algolia plugin https://community.algolia.com/jekyll-algolia/
-# # Recommended additional configuration provided, could be modified. Add your own parameters
-# algolia:
-#   application_id        : #As per your Algolia account
-#   index_name            : #As per your Algolia account
-#   search_only_api_key   : #As per your Algolia account
-#   files_to_exclude:         #Optional
-#     - _layouts/*.html
-#     - _includes/*.html
-#     - docs/_pages/*
-#     - docs/blog/*
-#   extensions_to_index:      #Optional
-#     - html
-#     - md
-#   searchableAttributes:     #Optional
-#     - title
-#     - headings
-#     - unordered(content)
-#     - unordered(subtitle)
-#     - unordered(categories)
-#     - unordered(collection)
-#     - unordered(tags)
-#   customRanking:            #Optional
-#     - desc(include_on_search)
-#     - desc(title)
-#     - desc(content)
-#     - desc(subtitle)
+# This site uses jekyll-algolia plugin https://community.algolia.com/jekyll-algolia/
+# Recommended additional configuration provided, could be modified. Add your own parameters
+algolia:
+  application_id        : #As per your Algolia account
+  index_name            : #As per your Algolia account
+  search_only_api_key   : #As per your Algolia account
+  files_to_exclude:         #Optional
+    - _layouts/*.html
+    - _includes/*.html
+    - docs/_pages/*
+    - docs/blog/*
+  extensions_to_index:      #Optional
+    - html
+    - md
+  searchableAttributes:     #Optional
+    - title
+    - headings
+    - unordered(content)
+    - unordered(subtitle)
+    - unordered(categories)
+    - unordered(collection)
+    - unordered(tags)
+  customRanking:            #Optional
+    - desc(include_on_search)
+    - desc(title)
+    - desc(content)
+    - desc(subtitle)
 
 # comments:
 #   provider:         #Enable comments via Disqus, giscus, Cactus.chat, cusdis
@@ -124,13 +124,13 @@ navbar:
      - title: # Child label
        url  : # child url
 
-# #Social links to be placed on your site footer
-# footer:
-#   links:
-#     - label : #Label
-#       icon  : # Fontawesome 5 icon
-#       url   : # A link or email: https://twitter.com/jack, mail@example.com
-#   copyright: # default is © <year> <name>
+#Social links to be placed on your site footer
+footer:
+  links:
+    - label : #Label
+      icon  : # Fontawesome 5 icon
+      url   : # A link or email: https://twitter.com/jack, mail@example.com
+  copyright: # default is © <year> <name>
 
 # C. Theme Settings
 # Google Fonts https://fonts.google.com/, add as many as you need
@@ -145,7 +145,7 @@ chulapa-skin:
   vars          :
     primary     :   #default ["#007bff"] - Bootstrap blue
 
-# # D. Jekyll Defaults and collections: see https://jekyllrb.com/
+# D. Jekyll Defaults and collections: see https://jekyllrb.com/
 
 # # Blog pagination: on this site /blog/index.html. https://jekyllrb.com/docs/pagination/
 # paginate: 4
@@ -153,19 +153,19 @@ chulapa-skin:
 # paginator_maxnum: 3  #default[3] Custom: max of number to be displayed on the paginator
 
 
-# # Collections https://jekyllrb.com/docs/step-by-step/09-collections/
-# collections:
-#   demo:
-#     output: true
-#     permalink: /demo/:name
-#   docs:
-#     output: true
-#     permalink: /docs/:name
-#   skins:
-#     output: true
-#     permalink: /skins/:name
-# collections_dir     : docs/collections
-# permalink           : /:year:month:day_:title/
+# Collections https://jekyllrb.com/docs/step-by-step/09-collections/
+collections:
+  demo:
+    output: true
+    permalink: /demo/:name
+  docs:
+    output: true
+    permalink: /docs/:name
+  skins:
+    output: true
+    permalink: /skins/:name
+collections_dir     : docs/collections
+permalink           : /:year:month:day_:title/
 
 
 # # Defaults https://jekyllrb.com/docs/configuration/front-matter-defaults/
@@ -244,17 +244,17 @@ plugins:
 # excerpt_separator: "\n\n"
 # incremental: false
 
-# # Markdown Processing
-# kramdown:
-#   input: GFM
-#   hard_wrap: false
-#   auto_ids: true
-#   footnote_nr: 1
-#   footnote_backlink: '&uarr;'
-#   entity_output: as_char
-#   toc_levels: 2..6
-#   smart_quotes: lsquo,rsquo,ldquo,rdquo
-#   enable_coderay: false
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  footnote_backlink: '&uarr;'
+  entity_output: as_char
+  toc_levels: 2..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
 
 # # Sass/SCSS
 # sass:
