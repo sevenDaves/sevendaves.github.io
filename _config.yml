@@ -218,12 +218,19 @@ analytics_id            :
 #   clippings: all
 #   blanklines: true
 
+# plugins:
+#   - jekyll-github-metadata
+#   - jekyll-paginate
+#   - jekyll-include-cache
+#   - jekyll-sitemap
 plugins:
-  - jekyll-github-metadata
   - jekyll-paginate
-  - jekyll-include-cache
   - jekyll-sitemap
-
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+  
 # Exclude these files from production site
 exclude:
   - LICENSE
